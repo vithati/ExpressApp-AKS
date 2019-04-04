@@ -1,17 +1,17 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: expressapp
+  name: payment
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: expressapp
+        app: payment
     spec:
       containers:
       - name: expressapp
-        image:  atulmakshelm.azurecr.io/express-aks:latest
+        image:  atulmakshelm.azurecr.io/payment:latest
         ports:
         - containerPort: 3000
       imagePullSecrets:
