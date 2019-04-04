@@ -1,17 +1,17 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: email
+  name: notification
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: email
+        app: notification
     spec:
       containers:
-      - name: email
-        image:  atulmakshelm.azurecr.io/email:latest
+      - name: notification
+        image:  atulmakshelm.azurecr.io/notification:latest
         ports:
         - containerPort: 3000
       imagePullSecrets:
