@@ -11,9 +11,7 @@ resources:
 
 stages:
 - stage: DeployToDefault
-  displayName: Deploy to Default
-  dependsOn: Build
-  condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/heads/'))
+  displayName: Deploy to Production
   jobs:
   - deployment: Deploy
     displayName: Deploy job
