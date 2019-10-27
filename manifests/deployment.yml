@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: azooinmyluggageexpressappaks 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: azooinmyluggageexpressappaks 
+    spec:
+      containers:
+        - name: azooinmyluggageexpressappaks 
+          image: vikranthtest.azurecr.io/azooinmyluggageexpressappaks 
+          ports:
+          - containerPort: 3000
