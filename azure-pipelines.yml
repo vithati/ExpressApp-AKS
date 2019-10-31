@@ -47,7 +47,7 @@ stages:
     displayName: Deploy
     pool:
       name: $(vmImageName)
-    environment: 'test.default'
+    environment: 'vikranth_test.default'
     strategy:
       runOnce:
         deploy:
