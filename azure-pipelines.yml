@@ -18,7 +18,7 @@ variables:
   imagePullSecret: 'builddemo6164aea7-auth'
 
   # Agent VM image name
-  vmImageName: 'default'
+  vmImageName: 'vikranth'
 
 stages:
 - stage: Build
