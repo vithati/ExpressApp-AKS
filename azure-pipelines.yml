@@ -10,7 +10,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'fce75e98-72d0-4262-9ef8-cb27e06693a9'
+  dockerRegistryServiceConnection: '00728367-101c-49db-aa21-ebe8db82adf8'
   imageRepository: 'azooinmyluggageexpressappaks'
   containerRegistry: 'vikranthtest.azurecr.io'
   dockerfilePath: '**/Dockerfile'
